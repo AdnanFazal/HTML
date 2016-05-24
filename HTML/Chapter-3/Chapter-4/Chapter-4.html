@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter - 4</title>
+</head>
+<body>
+<h1 align="center"><u>CHAPTER - 4</u></h1>
+<h1 align="center">L I N K S</h1>
+ <p>       
+    <ol type="I">         
+    <li><h3 type="I">WRITING LINKS</h3></li> 
+        <ul type="disc">
+            <li>Links are created using the &lta&gt &lt/a&gt element</li>
+            <li>The &lta&gt is the anchor element.</li>
+            <li>The &lta&gt is the anchor element.</li>
+            <li>In HTML5, the &lta&gt tag is always a hyperlink, but if it has no href attribute, it is only a ---
+                placeholder for a hyperlink.</li> 
+        </ul>        
+        
+                <b>Attributes of &lta&gt elements are;</b>
+        <ul>
+                    <dl>
+	                    <p><dt><b>href:</b></dt> 		<dd> Specifies the URL of the page the link goes to</dd></p>
+	                    <p><dt><b>downloads:</b></dt>	<dd> Specifies that the target will be downloaded when a user clicks on the 
+                                                             hyperlink. The value of this element will be “filename”</dd></p>
+	                    <p><dt><b>target:</b></dt>		<dd> Specifies where to open the linked document. Its values are;</dd></p>
+	                
+                    </dl>
+                                <ul type="disc">
+                                        <li>"_blank"    :Opens the linked document in a new window or tab</li>
+	                                    <li>"parent"    :Opens the linked document in the same frame as it was clicked (this is default)</li>
+	                                    <li>"self"      :Opens the linked document in the parent frame</li>
+	                                    <li>"top"       :Opens the linked document in the full body of the window</li>
+	                                    <li>"framename" :Opens the linked document in a named frame</li>
+                                </ul>     
+        </ul>   
+                    <dl>
+                                            
+                        <p><dt><b>link text</b></dt> <dd>- The text between opening &lta&gt and closing &lt/a&gt tags is known as link text.</dd></p>
+                    </dl>
+    <li><h3>LINKING TO OTHER SITES</h3></li>
+        <ul type="disc">
+            <li>ABSOLUTE URLs</li>
+                <ul type="circle">
+                    <li><abbr>URL</abbr> – Uniform Resource Locator.</li>
+                    <li>Absolute URLs – are the links of different websites.</li>
+                    <li>An absolute URL starts with domain name and followed by the path to a specific page.If no   
+                        page is specified the site will display the home page.</li> 
+
+                            <ul>
+                            <ul>&ltp&gt 
+	                            <ul>&ltul&gt
+	                            	<ul>&ltli&gt &lta href=”http://www.empireonline.com”&gt Empire&lt/a&gt&lt/li&gt<br>
+		                                &ltli&gt &lta href=”http://www.metacritic.com”&gt Metacritic&lt/a&gt&lt/li&gt</ul>
+
+                                &lt/ul&gt</ul>
+                            &lt/p&gt</ul>
+                            </ul>
+                </ul>
+        </ul>       
+<li><h3>LINKING TO OTHER PAGES ON THE SAME SITE</h3></li>
+        <ul type="disc">
+            <li>RELATIVE URLs</li>
+
+            <p>When do you link other pages of the same site you do not need to specify the domain name.A shorthand can be used known as Relative URL.<br>
+               If all the pages are in the same folder then “href attribute” value would be the file name only.</p>
+
+                            <ul>
+                            <ul>&ltp&gt
+                                <ul>&ltul&gt
+                                    <ul>&ltli&gt &lta href=”index.html”&gtHome&lt/a&gt&lt/li&gt<br />
+                                        &ltli&gt &lta href=”about us.html”&gtAbout&lt/a&gt&lt/li&gt</ul>
+                                 &lt/ul&gt</ul>
+                            &lt/p&gt</ul>
+                            </ul>
+            <p>Index html is a root directory.<br />
+               Index html are the home pages.<br />
+               Every parent, child, and grandchild folder has its own home page / index.html<br />
+               If you link into a page from two different pages you might need to write two different relative URLs.</p>
+
+            <li>RELATIVE LINK TYPES</li><br />
+            
+                 <ul type="circle">
+                    <li>SAME FOLDER</li>
+                    <p>Here we need to use file name only.<br />
+                       &lta href=”filename.html”&gt Reviews&lt/a&gt</p>
+
+                    <li>CHILD FOLDER</li>	
+                    <p>When file is in child folder,first to write child folder name and after forward slash write 
+                       file name<br>
+                       &lta href="child folder/filename.html”&gtReviews&lt/a&gt</p>
+
+                    <li>GRAND CHILD FOLDER</li>
+                    <p>When file is in grand child folder, first write child folder name then after forward slash write grand child folder name and then file name after forward slash.<br>
+                       &lta href="childfolder/grandchildfolder/filename.html"&gtReviews&lt/a&gt</p>
+
+                    <li>PARENT FOLDER</li>
+                    <p>When to move parent folder from child folder, we use ../<br />
+                       &lta href="../filename.html"&gtHome&lt/a&gt</p>
+
+                    <li>GRAND PARENT FOLDER</li>
+                    <p>When we want to go two levels up from grand child to grand parent we use ../../ and similarly as on.<br>
+                       &lta href="../../filename.html"&gtHome&lt/a&gt</p>
+                 </ul>
+        </ul>       
+<p><em>Note</em>: A forward slash will return to the home page for entire site.<br />
+                  A forward slash followed by a file name will return to that file provided it is in the root directory.<br>
+                  If you see the child folder name without file name web server will show the homw page.</P>
+
+<li><h3>OPENING LINKS IN A NEW WINDOW</h3></li>
+
+<p>To open a link into new window we use target attribute.And its value is “ _blank”.<br />
+   &lta href="<a href="http://www.w3schools.com" target="_blank">https://www.w3schools.com</a>” target="_blank"&gt</p>
+
+<li><h3>LINKING TO A SPECIFIC PART OF THE SAME PAGE<h3></li>
+
+<p>The id attribute specifies a unique id for an HTML element. The value must be unique within the HTML document.
+                <ul type="disc">
+                <li>The value of id attribute should start with a letter or an underscore.</li>
+	            <li>No number or character can be used for id value.</li>
+	            <li>Two ids should not have same value.</li>
+	            <li>To link to a specific part of a same page first we have to give an id to that specific part by “id attribute e.g. &lth1 id=”top”&gtMAIN HEADING &lt/h1&gt.</li>
+	            <li>Then we have to create a link by &lta&gt element anywhere on the page e.g. at bottom,<br>
+                    &ltp&gt &lta href=”#top”&gtTop&lt/a&gt&lt/p&gt.</li> 
+	            <li>The value of &lta&gt element starts with the # symbol followed by the id attribute</li>
+                </ul>
+<li><h3>LINKING TO A SPECIFIC PART OF ANOTHER PAGE<h3></li>
+                <ul type="disc">
+                <li>We use the same syntax as in the same page link.</li>
+                <li>But in &lta&gt element href attribute will contain the address for the page, either absolute or relative URL, followed by the # symbol and then followed by the value of id attribute.<br>
+                    &lta href=”Absolute or relative url/#value of id “&gtvalue of id&lt/a&gt</li>
+                </ul>
+</ol>
+    
+<br />
+    <h3 align="center"> <a href="../../index.html"><img src="../../images/HomePage.png" /></a></h3> 
+    <h2 align="center"><a href="../../Chapter-1.html">1</a><a href="../../Chapter-2/Chapter-2.html">2</a><a href="../Chapter-3.html">3</a><a href="Chapter-4.html">4</a><a href="../../Chapter-5.html">5</a><a href="../../Chapter-6.html">6</a><a href="../../Chapter-7.html">7</a><a href="../../Chapter-8.html">8</a>  </h2>
+  <p> <a href="#top">Top</a></p>
+ 
+<hr>
+<p>
+ <table bgcolor="skyblue">
+        <tr>
+            <td width="600"><address><b>Contact:</b></address></td>
+            <td width="600" align="right"><b>Related Links:</b></td>
+        </tr>
+            
+        <tr>
+            <td><address>E-mail:<a href="mailto: fazaladnan@yahoo.com">Adnan Fazal</a></address></td>
+            <td align="right"><a href="http://www.amazon.com/s/ref=nb_sb_ss_i_1_4?url=search-alias%3Daps&field-keywords=html+and+css&sprefix=html+and+css%2Caps%2C834" target="_blank">amazon.com</a></td>
+        </tr>
+            
+        <tr>
+            <td><address>P.E.C.H.S., Karachi </address></td>
+            <td align="right"><a href="http://www.w3schools.com/" target="_blank">w3schools.com</a></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td align="right"><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></td>
+        </tr>
+               
+    </table>
+</p>
+
+</body>
+</html>
